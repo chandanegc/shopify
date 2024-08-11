@@ -8,7 +8,7 @@ import "./db/connection.js";
 
 const app = express();
 dotenv.config();
-const port = process.env.PORT;
+const port = 5000 || process.env.PORT;
 
 //  midlewares
 app.use(express.static("build")); 
